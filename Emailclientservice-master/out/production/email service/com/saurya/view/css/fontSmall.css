@@ -1,0 +1,9 @@
+*{
+   -fx-font-size: 8pt;
+
+}
+
+.big{
+   -fx-font-size: 10pt;
+   -fx-text-fill: #35568c;
+}

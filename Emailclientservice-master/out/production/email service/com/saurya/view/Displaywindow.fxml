@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane prefHeight="603.0" prefWidth="790.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <MenuBar layoutY="2.0" prefHeight="16.0" prefWidth="753.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="2.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Open" />
+                  <MenuItem mnemonicParsing="false" text="Close" />
+                  <MenuItem mnemonicParsing="false" onAction="#addAccountAction" text="Add Account" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#optionsAction" text="Settings" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <TreeView fx:id="emailsTreeView" layoutY="23.0" prefHeight="550.0" prefWidth="187.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="27.0" />
+      <WebView fx:id="emailsWebView" layoutX="186.0" layoutY="258.0" prefHeight="320.0" prefWidth="572.0" AnchorPane.bottomAnchor="-1.0" AnchorPane.leftAnchor="186.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="258.0" />
+      <TableView fx:id="emailsTableView" layoutX="186.0" layoutY="27.0" prefHeight="232.0" prefWidth="565.0" AnchorPane.leftAnchor="186.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0">
+        <columns>
+          <TableColumn fx:id="sendercol" prefWidth="95.0" text="Sender" />
+          <TableColumn fx:id="datecol" prefWidth="50.0" text="Date" />
+            <TableColumn fx:id="receivercol" prefWidth="126.0" text="Receiver" />
+            <TableColumn fx:id="sizecol" prefWidth="58.0" text="Size" />
+            <TableColumn fx:id="subjectcol" prefWidth="274.0" text="Subject" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

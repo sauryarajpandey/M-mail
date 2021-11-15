@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="262.0" prefWidth="402.0" styleClass="container" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="33.0" layoutY="79.0" prefHeight="17.0" prefWidth="76.0" text="Fontsize" />
+      <Slider fx:id="fontSizepicker" layoutX="160.0" layoutY="81.0" prefHeight="17.0" prefWidth="150.0" />
+      <Label layoutX="33.0" layoutY="145.0" prefHeight="17.0" prefWidth="89.0" text="Choose Themes" />
+      <ChoiceBox fx:id="themePicker" layoutX="155.0" layoutY="141.0" prefHeight="17.0" prefWidth="150.0" />
+      <Label layoutX="189.0" layoutY="21.0" prefHeight="17.0" prefWidth="110.0" styleClass="big" text="Settings" />
+      <Button layoutX="175.0" layoutY="209.0" mnemonicParsing="false" onAction="#cancelButtonAction" text="Cancel" />
+      <Button layoutX="242.0" layoutY="209.0" mnemonicParsing="false" onAction="#applyButtonAction" prefHeight="25.0" prefWidth="58.0" text="Apply" />
+   </children>
+</AnchorPane>
